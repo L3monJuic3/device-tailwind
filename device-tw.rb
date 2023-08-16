@@ -22,8 +22,8 @@ gsub_file("Gemfile", '# gem "sassc-rails"', 'gem "sassc-rails"')
 ########################################
 run "rm -rf app/assets/stylesheets"
 run "rm -rf vendor"
-run "curl -L https://raw.githubusercontent.com/lewagon/rails-stylesheets/archive/more-js.zip > stylesheets.zip"
-run "unzip stylesheets.zip -d app/assets && rm -f stylesheets.zip && rm -f app/assets/rails-stylesheets-more-js/README.md"
+run "curl -L https://raw.githubusercontent.com/lewagon/rails-stylesheets/archive/more-js.zip > stylesheets.tar.zip"
+run "unzip stylesheets.tar.zip -d app/assets && rm -f stylesheets.tar.zip && rm -f app/assets/rails-stylesheets-more-js/README.md"
 run "mv app/assets/rails-stylesheets-more-js app/assets/stylesheets"
 
 # Layout
